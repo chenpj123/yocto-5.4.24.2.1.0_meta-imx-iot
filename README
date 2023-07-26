@@ -1,0 +1,1 @@
+DISTRO=fsl-imx-xwayland MACHINE=imx8mpiot source imx-setup-release.sh -b build-8mpiot-xwayland

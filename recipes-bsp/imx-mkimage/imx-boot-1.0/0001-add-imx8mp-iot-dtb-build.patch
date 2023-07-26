@@ -1,0 +1,28 @@
+From 6ba7c7b1992b24386fb4860ac5d3aa26e772208c Mon Sep 17 00:00:00 2001
+From: wukaihua312 <wukaihua312@163.com>
+Date: Wed, 26 Jul 2023 14:43:45 +0800
+Subject: [PATCH] add imx8mp-iot dtb build
+
+---
+ iMX8M/soc.mak | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ mode change 100644 => 100755 iMX8M/soc.mak
+
+diff --git a/iMX8M/soc.mak b/iMX8M/soc.mak
+old mode 100644
+new mode 100755
+index b7b3986..112896e
+--- a/iMX8M/soc.mak
++++ b/iMX8M/soc.mak
+@@ -135,7 +135,7 @@ clean:
+ 
+ dtbs = evk.dtb
+ $(dtbs):
+-	./$(DTB_PREPROC) $(PLAT)-evk.dtb $(dtbs)
++	./$(DTB_PREPROC) $(PLAT)-iot.dtb $(dtbs)
+ 
+ u-boot.itb: $(dtbs)
+ 	./$(PAD_IMAGE) tee.bin
+-- 
+2.17.1
+
